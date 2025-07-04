@@ -1,0 +1,215 @@
+body{
+	/*background_image es para imangen de fondo*/
+	background-image:url("../imagenes/fondo.jfif");
+	/*font-family es para la tipografia de letra*/
+	font-family:fuente-gealova;
+	/*font-soze es para el tamaño de la letras en pixeles*/
+	font-size:40px;
+	/*color es para el color de las letras*/
+	color:black;
+	/*text.align es para centrar el texto*/
+	text-align:center;
+	/*es para  letras en negritas*/
+	font-weight:bold;
+}
+hr{
+	/*border es para la linea
+	grosor en pixeles, tipó de letra, color*/
+	border:3px solid gold;
+	/*width*/
+	width:80%;
+	border-radius:5px;
+}
+p{
+	font-size:30px;
+	text-align:justify;
+	line-height:1.5;
+	letter-spacing:2px;
+}
+table,tr,td{
+	border:1px solid red
+	border-spacing:3px;
+	background-color:red;
+	font-size:15px;
+}
+.pie{
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	background-color:red;
+	/*background-image:linear-gradient()*/
+}
+.sub{
+	text-align:center;
+	font-weight:bold;
+	background-color:red;
+	height:75px;
+	font-family:fuente-Copeland;
+}
+.titulo{
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+}
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.contecarrouselcontroller>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a> i{
+	color:white;
+}
+/*cajas para productos*/
+.caja{
+	height:300px;
+	width:250px;
+	background:#F77CC3;
+	border:1px solid #F77CC3;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px black;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:#6F093A;
+	font-weight:bold;
+	font-family:fuente-HastinaFreeFont;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.cajas{
+	height:150px;
+	width:600px;
+	background:#F77CC3;
+	border:1px solid #F77CC3;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+/*Menu de navegacion*/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#fff;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-item:hover{
+	flex-grow:10;	
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+	font-size:15px;
+	color:red
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:yellow
+}
+.navegacion-item:nth-child(2){
+	background:gold
+}
+.navegacion-item:nth-child(3){
+	background:yellow
+}
+.navegacion-item:nth-child(4){
+	background:gold
+}
+.caja3{
+	height:300px;
+	width:300px;
+	background:purple
+	border:1px solid #F77CC3;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja4{
+	height:400px;
+	width:700px;
+	background:#F77CC3;
+	border:1px solid #F77CC3;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+/*fuentes y tipografia*/
+@font-face{
+	font-family:fuente-gealova;
+	src: url(../fuentes/Gealova.otf);
+}
+@font-face{
+	font-family:fuente-Copeland;
+	src: url(../fuentes/Copeland.otf);
+}
+@font-face{
+	font-family:fuente-HastinaFreeFont;
+	src: url(../fuentes/HastinaFreeFont.otf);
+}
